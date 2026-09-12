@@ -1,0 +1,1151 @@
+{
+  "evaluation_version": "1.0",
+  "seed": 42,
+  "total_questions": 30,
+  "metrics": {
+    "evidence_support_rate": 1.0,
+    "citation_correctness": 1.0,
+    "evidence_retrieval_precision": 0.4688,
+    "important_theme_recall": 0.625,
+    "insight_quality": 0.9688,
+    "pm_usefulness": 1.0,
+    "decision_preservation": 1.0
+  },
+  "pass_fail_status": {
+    "evidence_support_rate": {
+      "score": 1.0,
+      "threshold": 0.9,
+      "passed": true
+    },
+    "citation_correctness": {
+      "score": 1.0,
+      "threshold": 0.95,
+      "passed": true
+    },
+    "evidence_retrieval_precision": {
+      "score": 0.4688,
+      "threshold": 0.6,
+      "passed": false
+    },
+    "important_theme_recall": {
+      "score": 0.625,
+      "threshold": 0.7,
+      "passed": false
+    },
+    "insight_quality": {
+      "score": 0.9688,
+      "threshold": 0.7,
+      "passed": true
+    },
+    "pm_usefulness": {
+      "score": 1.0,
+      "threshold": 0.7,
+      "passed": true
+    },
+    "decision_preservation": {
+      "score": 1.0,
+      "threshold": 1.0,
+      "passed": true
+    }
+  },
+  "question_results": [
+    {
+      "question_id": "EV-ER-01",
+      "category": "Evidence Retrieval",
+      "metric": "evidence_retrieval_precision",
+      "score": 0.625,
+      "expected_evidence_ids": [
+        "SYN-SUR-007",
+        "SYN-SUP-014",
+        "SYN-INT-001",
+        "SYN-INT-002",
+        "SYN-SUR-003",
+        "SYN-SUP-018",
+        "SYN-SUP-002",
+        "SYN-SUR-001"
+      ],
+      "notes": "Evaluates precision of retrieved evidence for payment failure and redirect anxiety."
+    },
+    {
+      "question_id": "EV-ER-02",
+      "category": "Evidence Retrieval",
+      "metric": "evidence_retrieval_precision",
+      "score": 0.375,
+      "expected_evidence_ids": [
+        "PUB-000147",
+        "PUB-000342",
+        "PUB-000038",
+        "PUB-000175",
+        "PUB-000347",
+        "PUB-000324",
+        "PUB-000107",
+        "PUB-000042"
+      ],
+      "notes": "Checks retrieval of customer complaints regarding substandard physical product quality."
+    },
+    {
+      "question_id": "EV-ER-03",
+      "category": "Evidence Retrieval",
+      "metric": "evidence_retrieval_precision",
+      "score": 0.875,
+      "expected_evidence_ids": [
+        "PUB-000140",
+        "PUB-000298",
+        "PUB-000104",
+        "PUB-000238",
+        "PUB-000143",
+        "PUB-000051",
+        "PUB-000263",
+        "PUB-000340"
+      ],
+      "notes": "Evaluates evidence retrieval for lukewarm average product build reviews."
+    },
+    {
+      "question_id": "EV-ER-04",
+      "category": "Evidence Retrieval",
+      "metric": "evidence_retrieval_precision",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "PUB-000223",
+        "PUB-000331",
+        "PUB-000315",
+        "PUB-000335",
+        "PUB-000027",
+        "PUB-000253",
+        "PUB-000164",
+        "PUB-000247"
+      ],
+      "notes": "Verifies retrieval of positive customer quality praise."
+    },
+    {
+      "question_id": "EV-ER-05",
+      "category": "Evidence Retrieval",
+      "metric": "evidence_retrieval_precision",
+      "score": 0.375,
+      "expected_evidence_ids": [
+        "PUB-000060",
+        "PUB-000094",
+        "PUB-000172",
+        "PUB-000218",
+        "PUB-000257",
+        "PUB-000144",
+        "PUB-000124",
+        "PUB-000301"
+      ],
+      "notes": "Checks retrieval of product malfunction records."
+    },
+    {
+      "question_id": "EV-ER-06",
+      "category": "Evidence Retrieval",
+      "metric": "evidence_retrieval_precision",
+      "score": 0.0,
+      "expected_evidence_ids": [
+        "SYN-INT-029",
+        "SYN-INT-028",
+        "SYN-SUR-023",
+        "SYN-SUP-074"
+      ],
+      "notes": "Verifies retrieval of AI wishlist and feature enhancement suggestions."
+    },
+    {
+      "question_id": "EV-ER-07",
+      "category": "Evidence Retrieval",
+      "metric": "evidence_retrieval_precision",
+      "score": 0.0,
+      "expected_evidence_ids": [
+        "SYN-SUR-015",
+        "SYN-SUP-041",
+        "SYN-SUP-042",
+        "SYN-SUR-016"
+      ],
+      "notes": "Checks retrieval of positive onboarding feedback samples."
+    },
+    {
+      "question_id": "EV-ER-08",
+      "category": "Evidence Retrieval",
+      "metric": "evidence_retrieval_precision",
+      "score": 0.5,
+      "expected_evidence_ids": [
+        "SYN-SUR-010",
+        "SYN-SUP-023",
+        "SYN-SUP-014",
+        "SYN-INT-001"
+      ],
+      "notes": "Evaluates delivery uncertainty evidence clustered with transactional friction."
+    },
+    {
+      "question_id": "EV-TD-01",
+      "category": "Theme / Problem Discovery",
+      "metric": "important_theme_recall",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "SYN-SUR-007",
+        "SYN-SUP-014"
+      ],
+      "notes": "Verifies discovery of the primary synthetic checkout reliability theme (Cluster 3)."
+    },
+    {
+      "question_id": "EV-TD-02",
+      "category": "Theme / Problem Discovery",
+      "metric": "important_theme_recall",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "PUB-000147",
+        "PUB-000342"
+      ],
+      "notes": "Checks semantic theme identification for low product quality (Cluster 2)."
+    },
+    {
+      "question_id": "EV-TD-03",
+      "category": "Theme / Problem Discovery",
+      "metric": "important_theme_recall",
+      "score": 0.8,
+      "expected_evidence_ids": [
+        "PUB-000140",
+        "PUB-000298"
+      ],
+      "notes": "Verifies identification of borderline satisfaction and average quality (Cluster 1)."
+    },
+    {
+      "question_id": "EV-TD-04",
+      "category": "Theme / Problem Discovery",
+      "metric": "important_theme_recall",
+      "score": 0.8,
+      "expected_evidence_ids": [
+        "PUB-000223",
+        "PUB-000331"
+      ],
+      "notes": "Verifies segregation of positive review feedback (Cluster 0)."
+    },
+    {
+      "question_id": "EV-TD-05",
+      "category": "Theme / Problem Discovery",
+      "metric": "important_theme_recall",
+      "score": 0.8,
+      "expected_evidence_ids": [
+        "PUB-000060",
+        "PUB-000094"
+      ],
+      "notes": "Verifies discovery of product failure cluster (Cluster 4)."
+    },
+    {
+      "question_id": "EV-TD-06",
+      "category": "Theme / Problem Discovery",
+      "metric": "important_theme_recall",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "SYN-INT-029",
+        "SYN-SUR-023"
+      ],
+      "notes": "Verifies discovery of AI shopping and wishlist feature suggestions (Cluster 5)."
+    },
+    {
+      "question_id": "EV-PD-01",
+      "category": "Prioritization / Decision",
+      "metric": "decision_preservation",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "SYN-SUR-007",
+        "SYN-SUP-014"
+      ],
+      "notes": "Verifies that Cluster 3 receives priority score ~0.4695 and BUILD classification."
+    },
+    {
+      "question_id": "EV-PD-02",
+      "category": "Prioritization / Decision",
+      "metric": "decision_preservation",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "PUB-000147",
+        "PUB-000342"
+      ],
+      "notes": "Verifies BUILD decision driven by high severity (4.00/5) and high evidence strength (0.98)."
+    },
+    {
+      "question_id": "EV-PD-03",
+      "category": "Prioritization / Decision",
+      "metric": "decision_preservation",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "PUB-000140",
+        "PUB-000298"
+      ],
+      "notes": "Verifies INVESTIGATE decision for priority score in [0.12, 0.25)."
+    },
+    {
+      "question_id": "EV-PD-04",
+      "category": "Prioritization / Decision",
+      "metric": "decision_preservation",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "PUB-000223",
+        "PUB-000331"
+      ],
+      "notes": "Verifies low severity (1.39/5) keeps priority score at 0.0788 (MONITOR threshold)."
+    },
+    {
+      "question_id": "EV-PD-05",
+      "category": "Prioritization / Decision",
+      "metric": "decision_preservation",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "PUB-000060",
+        "PUB-000094"
+      ],
+      "notes": "Verifies multiplicative impact: unknown segments (1.2% known) suppress priority score to 0.0492."
+    },
+    {
+      "question_id": "EV-PD-06",
+      "category": "Prioritization / Decision",
+      "metric": "decision_preservation",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "SYN-INT-029",
+        "SYN-SUP-074"
+      ],
+      "notes": "Verifies MONITOR classification for priority score ~0.0972."
+    },
+    {
+      "question_id": "EV-PI-01",
+      "category": "Product Insight / Recommendation",
+      "metric": "insight_quality",
+      "score": 0.9688,
+      "expected_evidence_ids": [
+        "SYN-SUR-007",
+        "SYN-SUP-014",
+        "SYN-INT-001"
+      ],
+      "notes": "Checks recommendation for payment polling and fallback confirmation screens."
+    },
+    {
+      "question_id": "EV-PI-02",
+      "category": "Product Insight / Recommendation",
+      "metric": "insight_quality",
+      "score": 0.9688,
+      "expected_evidence_ids": [
+        "PUB-000147",
+        "PUB-000342"
+      ],
+      "notes": "Verifies recommendation to enhance quality assurance and fulfillment checks."
+    },
+    {
+      "question_id": "EV-PI-03",
+      "category": "Product Insight / Recommendation",
+      "metric": "insight_quality",
+      "score": 0.9688,
+      "expected_evidence_ids": [
+        "PUB-000140",
+        "PUB-000298"
+      ],
+      "notes": "Verifies user research and component sizing audit recommendation."
+    },
+    {
+      "question_id": "EV-PI-04",
+      "category": "Product Insight / Recommendation",
+      "metric": "insight_quality",
+      "score": 0.9688,
+      "expected_evidence_ids": [
+        "PUB-000223",
+        "PUB-000331"
+      ],
+      "notes": "Verifies telemetry tracking for baseline review sentiment shifts."
+    },
+    {
+      "question_id": "EV-PI-05",
+      "category": "Product Insight / Recommendation",
+      "metric": "insight_quality",
+      "score": 0.9688,
+      "expected_evidence_ids": [
+        "SYN-INT-029",
+        "SYN-SUR-015"
+      ],
+      "notes": "Verifies recommendation to monitor onboarding conversion while gauging AI feature demand."
+    },
+    {
+      "question_id": "EV-PI-06",
+      "category": "Product Insight / Recommendation",
+      "metric": "insight_quality",
+      "score": 0.9688,
+      "expected_evidence_ids": [
+        "PUB-000060",
+        "PUB-000094"
+      ],
+      "notes": "Verifies recommendation to defer development due to low priority score and unsegmented data."
+    },
+    {
+      "question_id": "EV-CL-01",
+      "category": "Contradiction / Limitation Awareness",
+      "metric": "contradiction_awareness",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "PUB-000223",
+        "PUB-000140",
+        "PUB-000147",
+        "SYN-INT-029"
+      ],
+      "notes": "Verifies contradiction flags on Clusters 0, 1, 2, and 5 (positive >= 2 and negative >= 2)."
+    },
+    {
+      "question_id": "EV-CL-02",
+      "category": "Contradiction / Limitation Awareness",
+      "metric": "contradiction_awareness",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "PUB-000060",
+        "PUB-000147"
+      ],
+      "notes": "Identifies Cluster 4 (1.2% known) and Cluster 2 (20.6% known) as segment-limited."
+    },
+    {
+      "question_id": "EV-CL-03",
+      "category": "Contradiction / Limitation Awareness",
+      "metric": "contradiction_awareness",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "SYN-SUR-007",
+        "SYN-SUP-014"
+      ],
+      "notes": "Verifies limitation note regarding lack of backend partner timeout error codes."
+    },
+    {
+      "question_id": "EV-CL-04",
+      "category": "Contradiction / Limitation Awareness",
+      "metric": "contradiction_awareness",
+      "score": 1.0,
+      "expected_evidence_ids": [
+        "SYN-INT-029",
+        "SYN-SUR-015"
+      ],
+      "notes": "Verifies limitation note on divergent topics (onboarding ease vs. AI wishlist requests)."
+    }
+  ],
+  "details": {
+    "evidence_support": {
+      "supported_count": 8,
+      "total_insights": 8,
+      "rate": 1.0
+    },
+    "citations": {
+      "correct_citations": 60,
+      "total_citations": 60,
+      "rate": 1.0,
+      "citations": [
+        {
+          "cluster_id": 0,
+          "feedback_id": "SYN-ENH-151",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 0,
+          "feedback_id": "SYN-ENH-179",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 0,
+          "feedback_id": "SYN-ENH-173",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 0,
+          "feedback_id": "SYN-SUR-023",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 0,
+          "feedback_id": "SYN-ENH-181",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 0,
+          "feedback_id": "SYN-ENH-158",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 1,
+          "feedback_id": "SYN-SUP-071",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 1,
+          "feedback_id": "SYN-ENH-265",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 1,
+          "feedback_id": "SYN-SUR-033",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 1,
+          "feedback_id": "SYN-SUP-074",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 1,
+          "feedback_id": "SYN-SUR-034",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 1,
+          "feedback_id": "SYN-ENH-299",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 1,
+          "feedback_id": "SYN-SUP-073",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 1,
+          "feedback_id": "SYN-ENH-286",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 2,
+          "feedback_id": "SYN-ENH-057",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 2,
+          "feedback_id": "SYN-SUP-023",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 2,
+          "feedback_id": "SYN-SUP-032",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 2,
+          "feedback_id": "SYN-SUP-022",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 2,
+          "feedback_id": "SYN-ENH-078",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 2,
+          "feedback_id": "SYN-SUP-027",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 2,
+          "feedback_id": "SYN-SUR-008",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 2,
+          "feedback_id": "SYN-ENH-052",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 3,
+          "feedback_id": "PUB-000140",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 3,
+          "feedback_id": "PUB-000298",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 3,
+          "feedback_id": "PUB-000104",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 3,
+          "feedback_id": "PUB-000143",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 3,
+          "feedback_id": "PUB-000051",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 3,
+          "feedback_id": "PUB-000278",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 3,
+          "feedback_id": "PUB-000148",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 4,
+          "feedback_id": "PUB-000257",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 4,
+          "feedback_id": "PUB-000347",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 4,
+          "feedback_id": "PUB-000057",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 4,
+          "feedback_id": "PUB-000209",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 4,
+          "feedback_id": "PUB-000147",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 4,
+          "feedback_id": "PUB-000301",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 4,
+          "feedback_id": "PUB-000124",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 4,
+          "feedback_id": "PUB-000197",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 5,
+          "feedback_id": "PUB-000223",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 5,
+          "feedback_id": "PUB-000315",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 5,
+          "feedback_id": "PUB-000331",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 5,
+          "feedback_id": "PUB-000027",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 5,
+          "feedback_id": "PUB-000253",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 5,
+          "feedback_id": "PUB-000247",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 6,
+          "feedback_id": "SYN-SUR-014",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 6,
+          "feedback_id": "SYN-SUR-022",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 6,
+          "feedback_id": "SYN-ENH-084",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 6,
+          "feedback_id": "SYN-INT-016",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 6,
+          "feedback_id": "SYN-SUR-018",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 6,
+          "feedback_id": "SYN-ENH-125",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 6,
+          "feedback_id": "SYN-ENH-127",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 6,
+          "feedback_id": "SYN-ENH-139",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 6,
+          "feedback_id": "SYN-ENH-053",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 7,
+          "feedback_id": "SYN-INT-001",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 7,
+          "feedback_id": "SYN-ENH-001",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 7,
+          "feedback_id": "SYN-ENH-013",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 7,
+          "feedback_id": "SYN-ENH-017",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 7,
+          "feedback_id": "SYN-SUP-002",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 7,
+          "feedback_id": "SYN-INT-002",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 7,
+          "feedback_id": "SYN-SUP-010",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        },
+        {
+          "cluster_id": 7,
+          "feedback_id": "SYN-SUP-001",
+          "in_canonical": true,
+          "in_bundle": true,
+          "valid": true
+        }
+      ]
+    },
+    "theme_recall": {
+      "ground_truth_theme_count": 8,
+      "matched_count": 5,
+      "matched_themes": [
+        "Payment & Checkout Reliability",
+        "Delivery-Date Uncertainty",
+        "Onboarding Confusion",
+        "Wishlist / AI Assistant Feature Requests",
+        "Product Quality Issues"
+      ],
+      "unmatched_themes": [
+        "Search Relevance",
+        "Returns / Refund Friction",
+        "Positive Checkout/Shopping Experience"
+      ],
+      "recall": 0.625
+    },
+    "quality": [
+      {
+        "cluster_id": 0,
+        "theme_name": "Demand for AI Shopping Assistants",
+        "score": 0.875,
+        "checks": {
+          "insight_present": true,
+          "problem_present": true,
+          "action_present": true,
+          "supporting_ids_present": true,
+          "action_consistent": false,
+          "limitations_present": true,
+          "no_hallucinations": true,
+          "contradiction_handled": true
+        }
+      },
+      {
+        "cluster_id": 1,
+        "theme_name": "Seamless Checkout and Delivery Experience",
+        "score": 1.0,
+        "checks": {
+          "insight_present": true,
+          "problem_present": true,
+          "action_present": true,
+          "supporting_ids_present": true,
+          "action_consistent": true,
+          "limitations_present": true,
+          "no_hallucinations": true,
+          "contradiction_handled": true
+        }
+      },
+      {
+        "cluster_id": 2,
+        "theme_name": "Inaccurate and Inconsistent Delivery Estimates",
+        "score": 1.0,
+        "checks": {
+          "insight_present": true,
+          "problem_present": true,
+          "action_present": true,
+          "supporting_ids_present": true,
+          "action_consistent": true,
+          "limitations_present": true,
+          "no_hallucinations": true,
+          "contradiction_handled": true
+        }
+      },
+      {
+        "cluster_id": 3,
+        "theme_name": "Mediocre Product and Build Quality",
+        "score": 0.875,
+        "checks": {
+          "insight_present": true,
+          "problem_present": true,
+          "action_present": true,
+          "supporting_ids_present": true,
+          "action_consistent": false,
+          "limitations_present": true,
+          "no_hallucinations": true,
+          "contradiction_handled": true
+        }
+      },
+      {
+        "cluster_id": 4,
+        "theme_name": "Poor Product Quality and Durability",
+        "score": 1.0,
+        "checks": {
+          "insight_present": true,
+          "problem_present": true,
+          "action_present": true,
+          "supporting_ids_present": true,
+          "action_consistent": true,
+          "limitations_present": true,
+          "no_hallucinations": true,
+          "contradiction_handled": true
+        }
+      },
+      {
+        "cluster_id": 5,
+        "theme_name": "High Overall Product Satisfaction",
+        "score": 1.0,
+        "checks": {
+          "insight_present": true,
+          "problem_present": true,
+          "action_present": true,
+          "supporting_ids_present": true,
+          "action_consistent": true,
+          "limitations_present": true,
+          "no_hallucinations": true,
+          "contradiction_handled": true
+        }
+      },
+      {
+        "cluster_id": 6,
+        "theme_name": "Mixed Customer Feedback",
+        "score": 1.0,
+        "checks": {
+          "insight_present": true,
+          "problem_present": true,
+          "action_present": true,
+          "supporting_ids_present": true,
+          "action_consistent": true,
+          "limitations_present": true,
+          "no_hallucinations": true,
+          "contradiction_handled": true
+        }
+      },
+      {
+        "cluster_id": 7,
+        "theme_name": "Checkout Payment Instability and Failure",
+        "score": 1.0,
+        "checks": {
+          "insight_present": true,
+          "problem_present": true,
+          "action_present": true,
+          "supporting_ids_present": true,
+          "action_consistent": true,
+          "limitations_present": true,
+          "no_hallucinations": true,
+          "contradiction_handled": true
+        }
+      }
+    ],
+    "usefulness": [
+      {
+        "cluster_id": 0,
+        "theme_name": "Demand for AI Shopping Assistants",
+        "score": 1.0,
+        "checks": {
+          "problem_detail": true,
+          "evidence_citations": true,
+          "action_actionability": true,
+          "valid_decision": true,
+          "limitations_clarity": true
+        }
+      },
+      {
+        "cluster_id": 1,
+        "theme_name": "Seamless Checkout and Delivery Experience",
+        "score": 1.0,
+        "checks": {
+          "problem_detail": true,
+          "evidence_citations": true,
+          "action_actionability": true,
+          "valid_decision": true,
+          "limitations_clarity": true
+        }
+      },
+      {
+        "cluster_id": 2,
+        "theme_name": "Inaccurate and Inconsistent Delivery Estimates",
+        "score": 1.0,
+        "checks": {
+          "problem_detail": true,
+          "evidence_citations": true,
+          "action_actionability": true,
+          "valid_decision": true,
+          "limitations_clarity": true
+        }
+      },
+      {
+        "cluster_id": 3,
+        "theme_name": "Mediocre Product and Build Quality",
+        "score": 1.0,
+        "checks": {
+          "problem_detail": true,
+          "evidence_citations": true,
+          "action_actionability": true,
+          "valid_decision": true,
+          "limitations_clarity": true
+        }
+      },
+      {
+        "cluster_id": 4,
+        "theme_name": "Poor Product Quality and Durability",
+        "score": 1.0,
+        "checks": {
+          "problem_detail": true,
+          "evidence_citations": true,
+          "action_actionability": true,
+          "valid_decision": true,
+          "limitations_clarity": true
+        }
+      },
+      {
+        "cluster_id": 5,
+        "theme_name": "High Overall Product Satisfaction",
+        "score": 1.0,
+        "checks": {
+          "problem_detail": true,
+          "evidence_citations": true,
+          "action_actionability": true,
+          "valid_decision": true,
+          "limitations_clarity": true
+        }
+      },
+      {
+        "cluster_id": 6,
+        "theme_name": "Mixed Customer Feedback",
+        "score": 1.0,
+        "checks": {
+          "problem_detail": true,
+          "evidence_citations": true,
+          "action_actionability": true,
+          "valid_decision": true,
+          "limitations_clarity": true
+        }
+      },
+      {
+        "cluster_id": 7,
+        "theme_name": "Checkout Payment Instability and Failure",
+        "score": 1.0,
+        "checks": {
+          "problem_detail": true,
+          "evidence_citations": true,
+          "action_actionability": true,
+          "valid_decision": true,
+          "limitations_clarity": true
+        }
+      }
+    ],
+    "decisions": [
+      {
+        "cluster_id": 0,
+        "insight_decision": "INVESTIGATE",
+        "authoritative_decision": "INVESTIGATE",
+        "preserved": true,
+        "priority_score_match": true
+      },
+      {
+        "cluster_id": 1,
+        "insight_decision": "MONITOR",
+        "authoritative_decision": "MONITOR",
+        "preserved": true,
+        "priority_score_match": true
+      },
+      {
+        "cluster_id": 2,
+        "insight_decision": "BUILD",
+        "authoritative_decision": "BUILD",
+        "preserved": true,
+        "priority_score_match": true
+      },
+      {
+        "cluster_id": 3,
+        "insight_decision": "INVESTIGATE",
+        "authoritative_decision": "INVESTIGATE",
+        "preserved": true,
+        "priority_score_match": true
+      },
+      {
+        "cluster_id": 4,
+        "insight_decision": "BUILD",
+        "authoritative_decision": "BUILD",
+        "preserved": true,
+        "priority_score_match": true
+      },
+      {
+        "cluster_id": 5,
+        "insight_decision": "DON'T BUILD YET",
+        "authoritative_decision": "DON'T BUILD YET",
+        "preserved": true,
+        "priority_score_match": true
+      },
+      {
+        "cluster_id": 6,
+        "insight_decision": "BUILD",
+        "authoritative_decision": "BUILD",
+        "preserved": true,
+        "priority_score_match": true
+      },
+      {
+        "cluster_id": 7,
+        "insight_decision": "BUILD",
+        "authoritative_decision": "BUILD",
+        "preserved": true,
+        "priority_score_match": true
+      }
+    ]
+  }
+}

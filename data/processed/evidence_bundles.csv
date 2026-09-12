@@ -1,0 +1,81 @@
+cluster_id,theme_name,feedback_id,feedback_text,similarity_score,evidence_rank
+0,Demand for AI Shopping Assistants,SYN-ENH-151,I really want an AI shopping assistant that can compare specs and user reviews between two similar laptops directly on the product page.,0.9171,1
+0,Demand for AI Shopping Assistants,SYN-INT-029,An automated price history graph in the wishlist would be a cool feature for heavy shoppers like me.,0.9139,2
+0,Demand for AI Shopping Assistants,SYN-ENH-179,"In usability testing, users requested an AI shopping assistant that can draft a personalized weekly meal plan with auto-added cart items.",0.9137,3
+0,Demand for AI Shopping Assistants,SYN-ENH-162,"In user interview, shopper expressed interest in an AI feature that automatically reorders routine grocery items when they run low.",0.9116,4
+0,Demand for AI Shopping Assistants,SYN-ENH-173,Survey feedback: customers want an AI assistant that scans ingredient lists in beauty products to flag known allergens.,0.9112,5
+0,Demand for AI Shopping Assistants,SYN-SUR-023,An AI shopping assistant to help compare specifications would be a great addition.,0.9111,6
+0,Demand for AI Shopping Assistants,SYN-ENH-181,Survey input: users want an AI assistant that can generate honest side-by-side spec comparison tables for smartphones.,0.9099,7
+0,Demand for AI Shopping Assistants,SYN-ENH-144,Survey response: customers want search suggestions to show thumbnail product images and direct price previews.,0.9096,8
+0,Demand for AI Shopping Assistants,SYN-ENH-158,Interview finding: users want an AI assistant to summarize 500+ customer reviews into a quick 'Pros and Cons' list on every product.,0.9094,9
+0,Demand for AI Shopping Assistants,SYN-ENH-155,"In user testing, participants requested an automated 'Move All Wishlist Items to Cart' button during festive discount sales.",0.9083,10
+1,Seamless Checkout and Delivery Experience,SYN-SUP-071,The one-click checkout was amazingly fast and my order was confirmed immediately.,0.9279,1
+1,Seamless Checkout and Delivery Experience,SYN-ENH-265,The one-click UPI checkout is blazingly fast. Placed my entire order in less than 5 seconds without friction.,0.9262,2
+1,Seamless Checkout and Delivery Experience,SYN-SUR-033,Checkout was smooth and fast with no issues.,0.9228,3
+1,Seamless Checkout and Delivery Experience,SYN-SUP-074,Very clean and user-friendly interface. Finding deals and checking out was effortless.,0.9206,4
+1,Seamless Checkout and Delivery Experience,SYN-SUR-034,Great shopping experience and prompt delivery.,0.9199,5
+1,Seamless Checkout and Delivery Experience,SYN-ENH-299,"App review: great experience as always. Clean navigation, reliable payments, and swift next-day deliveries.",0.919,6
+1,Seamless Checkout and Delivery Experience,SYN-SUP-073,Payment went through smoothly with Apple Pay and delivery arrived a day earlier than promised.,0.9183,7
+1,Seamless Checkout and Delivery Experience,SYN-SUR-015,"Onboarding was fast, clear, and very well designed.",0.9139,8
+1,Seamless Checkout and Delivery Experience,SYN-ENH-286,Seamless experience from browsing to delivery. The product looks exactly as advertised and functions flawlessly.,0.9137,9
+1,Seamless Checkout and Delivery Experience,SYN-ENH-275,"In user interview, shopper appreciated the hassle-free doorstep pickup return where the agent arrived within 2 hours.",0.9119,10
+2,Inaccurate and Inconsistent Delivery Estimates,SYN-ENH-057,Order status changed from 'Shipped' back to 'Processing' without any explanation or updated delivery date.,0.9084,1
+2,Inaccurate and Inconsistent Delivery Estimates,SYN-SUR-010,Delivery timeline unclear after order dispatch.,0.9083,2
+2,Inaccurate and Inconsistent Delivery Estimates,SYN-SUP-023,There is a mismatch between the delivery date shown on product page and the date in order summary.,0.9076,3
+2,Inaccurate and Inconsistent Delivery Estimates,SYN-SUP-032,"Product page promised next day delivery, but after checkout the receipt stated 6 days delivery window.",0.9062,4
+2,Inaccurate and Inconsistent Delivery Estimates,SYN-SUP-022,"The tracking page said delivery by Tuesday, but customer support says it won't arrive until Friday.",0.9061,5
+2,Inaccurate and Inconsistent Delivery Estimates,SYN-ENH-078,"Shipment tracking showed estimated delivery by 5 PM today, but at 6 PM the status silently changed to 'Pending carrier update'.",0.9051,6
+2,Inaccurate and Inconsistent Delivery Estimates,SYN-SUR-011,Package arrived later than initial estimate shown during checkout.,0.9044,7
+2,Inaccurate and Inconsistent Delivery Estimates,SYN-SUP-027,Promised 2-day delivery turned into 8 days with zero status updates on the dashboard.,0.9043,8
+2,Inaccurate and Inconsistent Delivery Estimates,SYN-SUR-008,Delivery date was postponed twice without explanation.,0.9035,9
+2,Inaccurate and Inconsistent Delivery Estimates,SYN-ENH-052,"My parcel was delayed by a week due to local transit issues, but customer support could not provide any updated delivery window.",0.9034,10
+3,Mediocre Product and Build Quality,PUB-000140,just okay. good product,0.9408,1
+3,Mediocre Product and Build Quality,PUB-000298,decent product. bad,0.9394,2
+3,Mediocre Product and Build Quality,PUB-000104,fair. ok ok product,0.9364,3
+3,Mediocre Product and Build Quality,PUB-000143,good. average quality,0.9358,4
+3,Mediocre Product and Build Quality,PUB-000238,decent product. average,0.9352,5
+3,Mediocre Product and Build Quality,PUB-000051,decent product. built quality is not up to the mark overall avearge,0.9319,6
+3,Mediocre Product and Build Quality,PUB-000263,decent product. normal,0.9279,7
+3,Mediocre Product and Build Quality,PUB-000278,avg quality,0.9259,8
+3,Mediocre Product and Build Quality,PUB-000148,good. ok but light color,0.9257,9
+3,Mediocre Product and Build Quality,PUB-000348,good. avarage,0.9253,10
+4,Poor Product Quality and Durability,PUB-000257,did not meet expectations. very bad quality,0.9551,1
+4,Poor Product Quality and Durability,PUB-000347,not specified. bad qualitys product,0.9517,2
+4,Poor Product Quality and Durability,PUB-000057,very bad quality,0.9498,3
+4,Poor Product Quality and Durability,PUB-000209,very poor quality,0.9491,4
+4,Poor Product Quality and Durability,PUB-000147,quality not good,0.9477,5
+4,Poor Product Quality and Durability,PUB-000301,bad quality. waste of money not good,0.9459,6
+4,Poor Product Quality and Durability,PUB-000124,terrible product. product quality is not good its not working after a month use,0.9451,7
+4,Poor Product Quality and Durability,PUB-000107,not specified. bad qlty items,0.9444,8
+4,Poor Product Quality and Durability,PUB-000197,very poor. very bad quality,0.9443,9
+4,Poor Product Quality and Durability,PUB-000224,did not meet expectations. poor quality products,0.9441,10
+5,High Overall Product Satisfaction,PUB-000223,wonderful. good product,0.9662,1
+5,High Overall Product Satisfaction,PUB-000315,wonderful. very nice product,0.9661,2
+5,High Overall Product Satisfaction,PUB-000331,great product. very nice,0.9652,3
+5,High Overall Product Satisfaction,PUB-000335,nice product. so nice,0.9591,4
+5,High Overall Product Satisfaction,PUB-000027,brilliant. very nice product,0.959,5
+5,High Overall Product Satisfaction,PUB-000253,excellent. very nice and worth full product,0.9551,6
+5,High Overall Product Satisfaction,PUB-000164,awesome. good products,0.9534,7
+5,High Overall Product Satisfaction,PUB-000310,just wow! good product,0.9514,8
+5,High Overall Product Satisfaction,PUB-000247,great product. indeed a quality product,0.9511,9
+5,High Overall Product Satisfaction,PUB-000152,really nice. nice product,0.95,10
+6,Mixed Customer Feedback,SYN-SUR-014,Difficult to complete onboarding on mobile browser.,0.9017,1
+6,Mixed Customer Feedback,SYN-SUR-022,Difficulty finding exact product variants using search bar.,0.9001,2
+6,Mixed Customer Feedback,SYN-ENH-084,"In user testing, first-time users struggled to understand the difference between creating a Personal vs Business account.",0.8976,3
+6,Mixed Customer Feedback,SYN-INT-016,The first-time user experience felt cluttered with too many permissions requests before I could even browse items.,0.8954,4
+6,Mixed Customer Feedback,SYN-SUR-018,Search results often contain items unrelated to my query.,0.8947,5
+6,Mixed Customer Feedback,SYN-ENH-125,Survey feedback: customers find multi-attribute search (e.g. 'wireless black gaming mouse under 2000') rarely surfaces the right products.,0.8945,6
+6,Mixed Customer Feedback,SYN-SUR-013,Confusing initial step during account setup for new members.,0.8944,7
+6,Mixed Customer Feedback,SYN-ENH-127,"In usability testing, users were frustrated that clicking a search filter reloads the entire page from the top instead of updating dynamically.",0.8936,8
+6,Mixed Customer Feedback,SYN-ENH-139,"Searching for 'iPhone 15 case' surfaced iPhone 11 and 12 cases on the first page, resulting in an accidental wrong purchase.",0.8935,9
+6,Mixed Customer Feedback,SYN-ENH-053,"During testing, the user was confused because the tracking link in the SMS led to a generic carrier homepage instead of their shipment status.",0.8933,10
+7,Checkout Payment Instability and Failure,SYN-INT-001,"During my first purchase on mobile, I wasn't sure if my payment went through because the screen froze on the bank redirect.",0.9286,1
+7,Checkout Payment Instability and Failure,SYN-ENH-001,"The checkout screen froze on 'Contacting Bank' for 5 minutes, so I closed the app. Later I got a debit alert for ₹3,499 but no order confirmation email.",0.9194,2
+7,Checkout Payment Instability and Failure,SYN-ENH-013,The payment screen gave an ambiguous error message saying 'Session Expired' even though I completed authentication in under 30 seconds.,0.9178,3
+7,Checkout Payment Instability and Failure,SYN-ENH-017,App crashed abruptly right after biometric fingerprint confirmation on the payment screen. I have no idea if my order went through.,0.9173,4
+7,Checkout Payment Instability and Failure,SYN-SUP-002,The payment gateway kept spinning on my iPhone and timed out before showing any confirmation.,0.9171,5
+7,Checkout Payment Instability and Failure,SYN-INT-002,"As a first-time mobile user, the checkout flow made me anxious. The payment pending state gave zero guidance on whether I was charged.",0.9148,6
+7,Checkout Payment Instability and Failure,SYN-SUP-010,The app crashed at the payment verification screen. Now I have two pending charges on my card.,0.9144,7
+7,Checkout Payment Instability and Failure,SYN-SUP-014,"Net banking session expired during the redirect back to the merchant site, creating order confusion.",0.9141,8
+7,Checkout Payment Instability and Failure,SYN-SUP-001,"My payment failed twice at the final checkout step using UPI, but money was deducted from my account.",0.911,9
+7,Checkout Payment Instability and Failure,SYN-SUR-001,Payment needed retry twice before succeeding. The checkout process feels unstable.,0.9107,10

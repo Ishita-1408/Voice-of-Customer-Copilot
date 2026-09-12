@@ -1,0 +1,154 @@
+{
+  "method": "V4 Adaptive Semantic Cluster Merging",
+  "winning_configuration": "Agglomerative_average_K8",
+  "strategy": "Agglomerative (average)",
+  "num_clusters": 8,
+  "silhouette_score": 0.1909,
+  "mean_coherence": 0.8913,
+  "min_cluster_size": 57,
+  "max_cluster_size": 172,
+  "unsupervised_selection_score": 0.28,
+  "cluster_sizes": [
+    67,
+    57,
+    99,
+    88,
+    172,
+    136,
+    113,
+    68
+  ],
+  "cluster_coherences": [
+    0.8869,
+    0.8922,
+    0.8781,
+    0.8943,
+    0.9026,
+    0.9172,
+    0.8692,
+    0.8897
+  ],
+  "post_hoc_evaluation": {
+    "official_important_theme_recall": 0.875,
+    "themes_met_70pct": 7,
+    "total_themes": 8,
+    "top2_coverage": 0.9502,
+    "top3_coverage": 0.9824,
+    "per_theme_details": {
+      "Delivery-Date Uncertainty": {
+        "total_records": 63,
+        "dominant_cluster": 2,
+        "dominant_count": 58,
+        "dominant_coverage": 0.9206,
+        "top2_coverage": 0.9841,
+        "top3_coverage": 1.0,
+        "meets_70pct_threshold": true,
+        "cluster_distribution": {
+          "2": 58,
+          "0": 4,
+          "6": 1
+        }
+      },
+      "Onboarding Confusion": {
+        "total_records": 56,
+        "dominant_cluster": 6,
+        "dominant_count": 45,
+        "dominant_coverage": 0.8036,
+        "top2_coverage": 0.9464,
+        "top3_coverage": 1.0,
+        "meets_70pct_threshold": true,
+        "cluster_distribution": {
+          "6": 45,
+          "1": 8,
+          "0": 3
+        }
+      },
+      "Payment & Checkout Reliability": {
+        "total_records": 75,
+        "dominant_cluster": 7,
+        "dominant_count": 68,
+        "dominant_coverage": 0.9067,
+        "top2_coverage": 0.96,
+        "top3_coverage": 0.9733,
+        "meets_70pct_threshold": true,
+        "cluster_distribution": {
+          "7": 68,
+          "6": 4,
+          "3": 1,
+          "2": 1,
+          "0": 1
+        }
+      },
+      "Positive Checkout/Shopping Experience": {
+        "total_records": 46,
+        "dominant_cluster": 1,
+        "dominant_count": 45,
+        "dominant_coverage": 0.9783,
+        "top2_coverage": 1.0,
+        "top3_coverage": 1.0,
+        "meets_70pct_threshold": true,
+        "cluster_distribution": {
+          "1": 45,
+          "5": 1
+        }
+      },
+      "Product Quality Issues": {
+        "total_records": 57,
+        "dominant_cluster": 4,
+        "dominant_count": 38,
+        "dominant_coverage": 0.6667,
+        "top2_coverage": 1.0,
+        "top3_coverage": 1.0,
+        "meets_70pct_threshold": false,
+        "cluster_distribution": {
+          "4": 38,
+          "6": 19
+        }
+      },
+      "Returns / Refund Friction": {
+        "total_records": 50,
+        "dominant_cluster": 2,
+        "dominant_count": 40,
+        "dominant_coverage": 0.8,
+        "top2_coverage": 0.9,
+        "top3_coverage": 0.98,
+        "meets_70pct_threshold": true,
+        "cluster_distribution": {
+          "2": 40,
+          "6": 5,
+          "0": 4,
+          "4": 1
+        }
+      },
+      "Search Relevance": {
+        "total_records": 53,
+        "dominant_cluster": 6,
+        "dominant_count": 38,
+        "dominant_coverage": 0.717,
+        "top2_coverage": 0.8113,
+        "top3_coverage": 0.9057,
+        "meets_70pct_threshold": true,
+        "cluster_distribution": {
+          "6": 38,
+          "3": 5,
+          "0": 5,
+          "4": 4,
+          "1": 1
+        }
+      },
+      "Wishlist / AI Assistant Feature Requests": {
+        "total_records": 50,
+        "dominant_cluster": 0,
+        "dominant_count": 49,
+        "dominant_coverage": 0.98,
+        "top2_coverage": 1.0,
+        "top3_coverage": 1.0,
+        "meets_70pct_threshold": true,
+        "cluster_distribution": {
+          "0": 49,
+          "1": 1
+        }
+      }
+    }
+  }
+}

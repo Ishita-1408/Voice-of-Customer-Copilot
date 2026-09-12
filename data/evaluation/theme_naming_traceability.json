@@ -1,0 +1,408 @@
+{
+  "model": "gemini-3.6-flash",
+  "timestamp": "2026-09-12 06:50:19 UTC",
+  "num_clusters": 8,
+  "total_feedback_records": 800,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "cluster_size": 67,
+      "theme_name": "Demand for AI Shopping Assistants",
+      "theme_definition": "This theme captures customer requests for AI-powered assistants and automated tools to simplify product research, comparisons, and purchasing.",
+      "customer_problem": "Shoppers face friction when manually evaluating product specifications, parsing through extensive customer reviews, tracking prices, and managing repetitive cart or wishlist actions. To streamline their shopping experience, users want intelligent features such as AI assistants for side-by-side spec comparisons, review summarization, meal planning, ingredient scanning, and automated reordering.",
+      "confidence": 0.9,
+      "representative_feedback": [
+        {
+          "feedback_id": "SYN-ENH-151",
+          "feedback_text": "I really want an AI shopping assistant that can compare specs and user reviews between two similar laptops directly on the product page."
+        },
+        {
+          "feedback_id": "SYN-INT-029",
+          "feedback_text": "An automated price history graph in the wishlist would be a cool feature for heavy shoppers like me."
+        },
+        {
+          "feedback_id": "SYN-ENH-179",
+          "feedback_text": "In usability testing, users requested an AI shopping assistant that can draft a personalized weekly meal plan with auto-added cart items."
+        },
+        {
+          "feedback_id": "SYN-ENH-162",
+          "feedback_text": "In user interview, shopper expressed interest in an AI feature that automatically reorders routine grocery items when they run low."
+        },
+        {
+          "feedback_id": "SYN-ENH-173",
+          "feedback_text": "Survey feedback: customers want an AI assistant that scans ingredient lists in beauty products to flag known allergens."
+        },
+        {
+          "feedback_id": "SYN-SUR-023",
+          "feedback_text": "An AI shopping assistant to help compare specifications would be a great addition."
+        },
+        {
+          "feedback_id": "SYN-ENH-181",
+          "feedback_text": "Survey input: users want an AI assistant that can generate honest side-by-side spec comparison tables for smartphones."
+        },
+        {
+          "feedback_id": "SYN-ENH-144",
+          "feedback_text": "Survey response: customers want search suggestions to show thumbnail product images and direct price previews."
+        },
+        {
+          "feedback_id": "SYN-ENH-158",
+          "feedback_text": "Interview finding: users want an AI assistant to summarize 500+ customer reviews into a quick 'Pros and Cons' list on every product."
+        },
+        {
+          "feedback_id": "SYN-ENH-155",
+          "feedback_text": "In user testing, participants requested an automated 'Move All Wishlist Items to Cart' button during festive discount sales."
+        }
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "cluster_size": 57,
+      "theme_name": "Seamless Checkout and Delivery Experience",
+      "theme_definition": "Customers express high satisfaction with fast one-click checkouts, intuitive navigation, reliable payment processing, and prompt delivery services.",
+      "customer_problem": "Customers reported no active friction or pain points, highlighting an exceptionally positive end-to-end user experience. Key drivers of satisfaction include blazingly fast checkout options, effortless interface navigation, reliable payment methods, and swift fulfillment and return processes.",
+      "confidence": 0.95,
+      "representative_feedback": [
+        {
+          "feedback_id": "SYN-SUP-071",
+          "feedback_text": "The one-click checkout was amazingly fast and my order was confirmed immediately."
+        },
+        {
+          "feedback_id": "SYN-ENH-265",
+          "feedback_text": "The one-click UPI checkout is blazingly fast. Placed my entire order in less than 5 seconds without friction."
+        },
+        {
+          "feedback_id": "SYN-SUR-033",
+          "feedback_text": "Checkout was smooth and fast with no issues."
+        },
+        {
+          "feedback_id": "SYN-SUP-074",
+          "feedback_text": "Very clean and user-friendly interface. Finding deals and checking out was effortless."
+        },
+        {
+          "feedback_id": "SYN-SUR-034",
+          "feedback_text": "Great shopping experience and prompt delivery."
+        },
+        {
+          "feedback_id": "SYN-ENH-299",
+          "feedback_text": "App review: great experience as always. Clean navigation, reliable payments, and swift next-day deliveries."
+        },
+        {
+          "feedback_id": "SYN-SUP-073",
+          "feedback_text": "Payment went through smoothly with Apple Pay and delivery arrived a day earlier than promised."
+        },
+        {
+          "feedback_id": "SYN-SUR-015",
+          "feedback_text": "Onboarding was fast, clear, and very well designed."
+        },
+        {
+          "feedback_id": "SYN-ENH-286",
+          "feedback_text": "Seamless experience from browsing to delivery. The product looks exactly as advertised and functions flawlessly."
+        },
+        {
+          "feedback_id": "SYN-ENH-275",
+          "feedback_text": "In user interview, shopper appreciated the hassle-free doorstep pickup return where the agent arrived within 2 hours."
+        }
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "cluster_size": 99,
+      "theme_name": "Inaccurate and Inconsistent Delivery Estimates",
+      "theme_definition": "This theme represents customer frustration with inaccurate, conflicting, or uncommunicated delivery dates across product pages, checkout receipts, and order tracking systems.",
+      "customer_problem": "Customers experience significant friction due to discrepancies between promised delivery dates at checkout and actual fulfillment timelines. Key pain points include unexpected delays, silent order status updates, conflicting timeline information across support and tracking channels, and a lack of proactive communication when delivery dates are postponed.",
+      "confidence": 0.95,
+      "representative_feedback": [
+        {
+          "feedback_id": "SYN-ENH-057",
+          "feedback_text": "Order status changed from 'Shipped' back to 'Processing' without any explanation or updated delivery date."
+        },
+        {
+          "feedback_id": "SYN-SUR-010",
+          "feedback_text": "Delivery timeline unclear after order dispatch."
+        },
+        {
+          "feedback_id": "SYN-SUP-023",
+          "feedback_text": "There is a mismatch between the delivery date shown on product page and the date in order summary."
+        },
+        {
+          "feedback_id": "SYN-SUP-032",
+          "feedback_text": "Product page promised next day delivery, but after checkout the receipt stated 6 days delivery window."
+        },
+        {
+          "feedback_id": "SYN-SUP-022",
+          "feedback_text": "The tracking page said delivery by Tuesday, but customer support says it won't arrive until Friday."
+        },
+        {
+          "feedback_id": "SYN-ENH-078",
+          "feedback_text": "Shipment tracking showed estimated delivery by 5 PM today, but at 6 PM the status silently changed to 'Pending carrier update'."
+        },
+        {
+          "feedback_id": "SYN-SUR-011",
+          "feedback_text": "Package arrived later than initial estimate shown during checkout."
+        },
+        {
+          "feedback_id": "SYN-SUP-027",
+          "feedback_text": "Promised 2-day delivery turned into 8 days with zero status updates on the dashboard."
+        },
+        {
+          "feedback_id": "SYN-SUR-008",
+          "feedback_text": "Delivery date was postponed twice without explanation."
+        },
+        {
+          "feedback_id": "SYN-ENH-052",
+          "feedback_text": "My parcel was delayed by a week due to local transit issues, but customer support could not provide any updated delivery window."
+        }
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "cluster_size": 88,
+      "theme_name": "Mediocre Product and Build Quality",
+      "theme_definition": "This theme reflects customer feedback regarding average, mediocre, or underwhelming overall product and build quality.",
+      "customer_problem": "Customers express lukewarm satisfaction, frequently describing the item as merely average, okay, or decent. The primary point of friction is that the product's overall build quality feels unexceptional or slightly below expectations rather than premium.",
+      "confidence": 0.9,
+      "representative_feedback": [
+        {
+          "feedback_id": "PUB-000140",
+          "feedback_text": "just okay. good product"
+        },
+        {
+          "feedback_id": "PUB-000298",
+          "feedback_text": "decent product. bad"
+        },
+        {
+          "feedback_id": "PUB-000104",
+          "feedback_text": "fair. ok ok product"
+        },
+        {
+          "feedback_id": "PUB-000143",
+          "feedback_text": "good. average quality"
+        },
+        {
+          "feedback_id": "PUB-000238",
+          "feedback_text": "decent product. average"
+        },
+        {
+          "feedback_id": "PUB-000051",
+          "feedback_text": "decent product. built quality is not up to the mark overall avearge"
+        },
+        {
+          "feedback_id": "PUB-000263",
+          "feedback_text": "decent product. normal"
+        },
+        {
+          "feedback_id": "PUB-000278",
+          "feedback_text": "avg quality"
+        },
+        {
+          "feedback_id": "PUB-000148",
+          "feedback_text": "good. ok but light color"
+        },
+        {
+          "feedback_id": "PUB-000348",
+          "feedback_text": "good. avarage"
+        }
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "cluster_size": 172,
+      "theme_name": "Poor Product Quality and Durability",
+      "theme_definition": "This theme captures customer dissatisfaction regarding low overall product quality, failure to meet expectations, and premature product breakdown.",
+      "customer_problem": "Customers consistently express frustration with receiving subpar items that fail to perform as expected. Key pain points include inferior material or build quality, products stopping work after a short period of use, and feelings that the product is a waste of money.",
+      "confidence": 0.95,
+      "representative_feedback": [
+        {
+          "feedback_id": "PUB-000257",
+          "feedback_text": "did not meet expectations. very bad quality"
+        },
+        {
+          "feedback_id": "PUB-000347",
+          "feedback_text": "not specified. bad qualitys product"
+        },
+        {
+          "feedback_id": "PUB-000057",
+          "feedback_text": "very bad quality"
+        },
+        {
+          "feedback_id": "PUB-000209",
+          "feedback_text": "very poor quality"
+        },
+        {
+          "feedback_id": "PUB-000147",
+          "feedback_text": "quality not good"
+        },
+        {
+          "feedback_id": "PUB-000301",
+          "feedback_text": "bad quality. waste of money not good"
+        },
+        {
+          "feedback_id": "PUB-000124",
+          "feedback_text": "terrible product. product quality is not good its not working after a month use"
+        },
+        {
+          "feedback_id": "PUB-000107",
+          "feedback_text": "not specified. bad qlty items"
+        },
+        {
+          "feedback_id": "PUB-000197",
+          "feedback_text": "very poor. very bad quality"
+        },
+        {
+          "feedback_id": "PUB-000224",
+          "feedback_text": "did not meet expectations. poor quality products"
+        }
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "cluster_size": 136,
+      "theme_name": "High Overall Product Satisfaction",
+      "theme_definition": "This theme represents customer feedback expressing strong general satisfaction and enthusiasm for overall product quality.",
+      "customer_problem": "There are no reported customer friction points in these feedback samples; instead, customers consistently express high praise and satisfaction regarding product quality and value.",
+      "confidence": 0.95,
+      "representative_feedback": [
+        {
+          "feedback_id": "PUB-000223",
+          "feedback_text": "wonderful. good product"
+        },
+        {
+          "feedback_id": "PUB-000315",
+          "feedback_text": "wonderful. very nice product"
+        },
+        {
+          "feedback_id": "PUB-000331",
+          "feedback_text": "great product. very nice"
+        },
+        {
+          "feedback_id": "PUB-000335",
+          "feedback_text": "nice product. so nice"
+        },
+        {
+          "feedback_id": "PUB-000027",
+          "feedback_text": "brilliant. very nice product"
+        },
+        {
+          "feedback_id": "PUB-000253",
+          "feedback_text": "excellent. very nice and worth full product"
+        },
+        {
+          "feedback_id": "PUB-000164",
+          "feedback_text": "awesome. good products"
+        },
+        {
+          "feedback_id": "PUB-000310",
+          "feedback_text": "just wow! good product"
+        },
+        {
+          "feedback_id": "PUB-000247",
+          "feedback_text": "great product. indeed a quality product"
+        },
+        {
+          "feedback_id": "PUB-000152",
+          "feedback_text": "really nice. nice product"
+        }
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "cluster_size": 113,
+      "theme_name": "Mixed Customer Feedback",
+      "theme_definition": "This feedback set combines multiple unrelated user experience issues spanning product search accuracy, initial account onboarding, and post-purchase order tracking links.",
+      "customer_problem": "The feedback samples address disparate friction points across different user journeys. Several items highlight issues with search relevance and inefficient page-reloading filters, others detail confusion and friction during account setup and permissions requests, and one notes an ineffective SMS shipment tracking link. Because these samples cover distinct functional domains, they do not form a single coherent topic.",
+      "confidence": 0.3,
+      "representative_feedback": [
+        {
+          "feedback_id": "SYN-SUR-014",
+          "feedback_text": "Difficult to complete onboarding on mobile browser."
+        },
+        {
+          "feedback_id": "SYN-SUR-022",
+          "feedback_text": "Difficulty finding exact product variants using search bar."
+        },
+        {
+          "feedback_id": "SYN-ENH-084",
+          "feedback_text": "In user testing, first-time users struggled to understand the difference between creating a Personal vs Business account."
+        },
+        {
+          "feedback_id": "SYN-INT-016",
+          "feedback_text": "The first-time user experience felt cluttered with too many permissions requests before I could even browse items."
+        },
+        {
+          "feedback_id": "SYN-SUR-018",
+          "feedback_text": "Search results often contain items unrelated to my query."
+        },
+        {
+          "feedback_id": "SYN-ENH-125",
+          "feedback_text": "Survey feedback: customers find multi-attribute search (e.g. 'wireless black gaming mouse under 2000') rarely surfaces the right products."
+        },
+        {
+          "feedback_id": "SYN-SUR-013",
+          "feedback_text": "Confusing initial step during account setup for new members."
+        },
+        {
+          "feedback_id": "SYN-ENH-127",
+          "feedback_text": "In usability testing, users were frustrated that clicking a search filter reloads the entire page from the top instead of updating dynamically."
+        },
+        {
+          "feedback_id": "SYN-ENH-139",
+          "feedback_text": "Searching for 'iPhone 15 case' surfaced iPhone 11 and 12 cases on the first page, resulting in an accidental wrong purchase."
+        },
+        {
+          "feedback_id": "SYN-ENH-053",
+          "feedback_text": "During testing, the user was confused because the tracking link in the SMS led to a generic carrier homepage instead of their shipment status."
+        }
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "cluster_size": 68,
+      "theme_name": "Checkout Payment Instability and Failure",
+      "theme_definition": "This theme captures user feedback regarding technical failures, app crashes, timeouts, and unclear transaction statuses during the checkout payment process.",
+      "customer_problem": "Users encounter significant technical issues during the payment step, including app crashes, screen freezes during bank redirects, session timeouts, and vague error messages. These disruptions leave customers uncertain whether their transactions succeeded, often resulting in unexpected account debits without receiving order confirmations or clear guidance.",
+      "confidence": 0.95,
+      "representative_feedback": [
+        {
+          "feedback_id": "SYN-INT-001",
+          "feedback_text": "During my first purchase on mobile, I wasn't sure if my payment went through because the screen froze on the bank redirect."
+        },
+        {
+          "feedback_id": "SYN-ENH-001",
+          "feedback_text": "The checkout screen froze on 'Contacting Bank' for 5 minutes, so I closed the app. Later I got a debit alert for \u20b93,499 but no order confirmation email."
+        },
+        {
+          "feedback_id": "SYN-ENH-013",
+          "feedback_text": "The payment screen gave an ambiguous error message saying 'Session Expired' even though I completed authentication in under 30 seconds."
+        },
+        {
+          "feedback_id": "SYN-ENH-017",
+          "feedback_text": "App crashed abruptly right after biometric fingerprint confirmation on the payment screen. I have no idea if my order went through."
+        },
+        {
+          "feedback_id": "SYN-SUP-002",
+          "feedback_text": "The payment gateway kept spinning on my iPhone and timed out before showing any confirmation."
+        },
+        {
+          "feedback_id": "SYN-INT-002",
+          "feedback_text": "As a first-time mobile user, the checkout flow made me anxious. The payment pending state gave zero guidance on whether I was charged."
+        },
+        {
+          "feedback_id": "SYN-SUP-010",
+          "feedback_text": "The app crashed at the payment verification screen. Now I have two pending charges on my card."
+        },
+        {
+          "feedback_id": "SYN-SUP-014",
+          "feedback_text": "Net banking session expired during the redirect back to the merchant site, creating order confusion."
+        },
+        {
+          "feedback_id": "SYN-SUP-001",
+          "feedback_text": "My payment failed twice at the final checkout step using UPI, but money was deducted from my account."
+        },
+        {
+          "feedback_id": "SYN-SUR-001",
+          "feedback_text": "Payment needed retry twice before succeeding. The checkout process feels unstable."
+        }
+      ]
+    }
+  ]
+}

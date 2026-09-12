@@ -1,0 +1,31 @@
+question_id,category,metric,score,expected_evidence_ids,notes
+EV-ER-01,Evidence Retrieval,evidence_retrieval_precision,0.625,"['SYN-SUR-007', 'SYN-SUP-014', 'SYN-INT-001', 'SYN-INT-002', 'SYN-SUR-003', 'SYN-SUP-018', 'SYN-SUP-002', 'SYN-SUR-001']",Evaluates precision of retrieved evidence for payment failure and redirect anxiety.
+EV-ER-02,Evidence Retrieval,evidence_retrieval_precision,0.375,"['PUB-000147', 'PUB-000342', 'PUB-000038', 'PUB-000175', 'PUB-000347', 'PUB-000324', 'PUB-000107', 'PUB-000042']",Checks retrieval of customer complaints regarding substandard physical product quality.
+EV-ER-03,Evidence Retrieval,evidence_retrieval_precision,0.875,"['PUB-000140', 'PUB-000298', 'PUB-000104', 'PUB-000238', 'PUB-000143', 'PUB-000051', 'PUB-000263', 'PUB-000340']",Evaluates evidence retrieval for lukewarm average product build reviews.
+EV-ER-04,Evidence Retrieval,evidence_retrieval_precision,1.0,"['PUB-000223', 'PUB-000331', 'PUB-000315', 'PUB-000335', 'PUB-000027', 'PUB-000253', 'PUB-000164', 'PUB-000247']",Verifies retrieval of positive customer quality praise.
+EV-ER-05,Evidence Retrieval,evidence_retrieval_precision,0.375,"['PUB-000060', 'PUB-000094', 'PUB-000172', 'PUB-000218', 'PUB-000257', 'PUB-000144', 'PUB-000124', 'PUB-000301']",Checks retrieval of product malfunction records.
+EV-ER-06,Evidence Retrieval,evidence_retrieval_precision,0.0,"['SYN-INT-029', 'SYN-INT-028', 'SYN-SUR-023', 'SYN-SUP-074']",Verifies retrieval of AI wishlist and feature enhancement suggestions.
+EV-ER-07,Evidence Retrieval,evidence_retrieval_precision,0.0,"['SYN-SUR-015', 'SYN-SUP-041', 'SYN-SUP-042', 'SYN-SUR-016']",Checks retrieval of positive onboarding feedback samples.
+EV-ER-08,Evidence Retrieval,evidence_retrieval_precision,0.5,"['SYN-SUR-010', 'SYN-SUP-023', 'SYN-SUP-014', 'SYN-INT-001']",Evaluates delivery uncertainty evidence clustered with transactional friction.
+EV-TD-01,Theme / Problem Discovery,important_theme_recall,1.0,"['SYN-SUR-007', 'SYN-SUP-014']",Verifies discovery of the primary synthetic checkout reliability theme (Cluster 3).
+EV-TD-02,Theme / Problem Discovery,important_theme_recall,1.0,"['PUB-000147', 'PUB-000342']",Checks semantic theme identification for low product quality (Cluster 2).
+EV-TD-03,Theme / Problem Discovery,important_theme_recall,0.8,"['PUB-000140', 'PUB-000298']",Verifies identification of borderline satisfaction and average quality (Cluster 1).
+EV-TD-04,Theme / Problem Discovery,important_theme_recall,0.8,"['PUB-000223', 'PUB-000331']",Verifies segregation of positive review feedback (Cluster 0).
+EV-TD-05,Theme / Problem Discovery,important_theme_recall,0.8,"['PUB-000060', 'PUB-000094']",Verifies discovery of product failure cluster (Cluster 4).
+EV-TD-06,Theme / Problem Discovery,important_theme_recall,1.0,"['SYN-INT-029', 'SYN-SUR-023']",Verifies discovery of AI shopping and wishlist feature suggestions (Cluster 5).
+EV-PD-01,Prioritization / Decision,decision_preservation,1.0,"['SYN-SUR-007', 'SYN-SUP-014']",Verifies that Cluster 3 receives priority score ~0.4695 and BUILD classification.
+EV-PD-02,Prioritization / Decision,decision_preservation,1.0,"['PUB-000147', 'PUB-000342']",Verifies BUILD decision driven by high severity (4.00/5) and high evidence strength (0.98).
+EV-PD-03,Prioritization / Decision,decision_preservation,1.0,"['PUB-000140', 'PUB-000298']","Verifies INVESTIGATE decision for priority score in [0.12, 0.25)."
+EV-PD-04,Prioritization / Decision,decision_preservation,1.0,"['PUB-000223', 'PUB-000331']",Verifies low severity (1.39/5) keeps priority score at 0.0788 (MONITOR threshold).
+EV-PD-05,Prioritization / Decision,decision_preservation,1.0,"['PUB-000060', 'PUB-000094']",Verifies multiplicative impact: unknown segments (1.2% known) suppress priority score to 0.0492.
+EV-PD-06,Prioritization / Decision,decision_preservation,1.0,"['SYN-INT-029', 'SYN-SUP-074']",Verifies MONITOR classification for priority score ~0.0972.
+EV-PI-01,Product Insight / Recommendation,insight_quality,0.9688,"['SYN-SUR-007', 'SYN-SUP-014', 'SYN-INT-001']",Checks recommendation for payment polling and fallback confirmation screens.
+EV-PI-02,Product Insight / Recommendation,insight_quality,0.9688,"['PUB-000147', 'PUB-000342']",Verifies recommendation to enhance quality assurance and fulfillment checks.
+EV-PI-03,Product Insight / Recommendation,insight_quality,0.9688,"['PUB-000140', 'PUB-000298']",Verifies user research and component sizing audit recommendation.
+EV-PI-04,Product Insight / Recommendation,insight_quality,0.9688,"['PUB-000223', 'PUB-000331']",Verifies telemetry tracking for baseline review sentiment shifts.
+EV-PI-05,Product Insight / Recommendation,insight_quality,0.9688,"['SYN-INT-029', 'SYN-SUR-015']",Verifies recommendation to monitor onboarding conversion while gauging AI feature demand.
+EV-PI-06,Product Insight / Recommendation,insight_quality,0.9688,"['PUB-000060', 'PUB-000094']",Verifies recommendation to defer development due to low priority score and unsegmented data.
+EV-CL-01,Contradiction / Limitation Awareness,contradiction_awareness,1.0,"['PUB-000223', 'PUB-000140', 'PUB-000147', 'SYN-INT-029']","Verifies contradiction flags on Clusters 0, 1, 2, and 5 (positive >= 2 and negative >= 2)."
+EV-CL-02,Contradiction / Limitation Awareness,contradiction_awareness,1.0,"['PUB-000060', 'PUB-000147']",Identifies Cluster 4 (1.2% known) and Cluster 2 (20.6% known) as segment-limited.
+EV-CL-03,Contradiction / Limitation Awareness,contradiction_awareness,1.0,"['SYN-SUR-007', 'SYN-SUP-014']",Verifies limitation note regarding lack of backend partner timeout error codes.
+EV-CL-04,Contradiction / Limitation Awareness,contradiction_awareness,1.0,"['SYN-INT-029', 'SYN-SUR-015']",Verifies limitation note on divergent topics (onboarding ease vs. AI wishlist requests).

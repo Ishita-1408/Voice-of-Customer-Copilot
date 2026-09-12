@@ -1,0 +1,57 @@
+{
+  "evaluation_version": "1.0",
+  "generated_at": "2026-09-12T10:49:49.488700+00:00",
+  "total_questions": 30,
+  "metrics": {
+    "evidence_support_rate": 1.0,
+    "citation_correctness": 1.0,
+    "evidence_retrieval_precision": 0.4688,
+    "important_theme_recall": 0.625,
+    "insight_quality": 0.9688,
+    "pm_usefulness": 1.0,
+    "decision_preservation": 1.0
+  },
+  "pass_fail_status": {
+    "evidence_support_rate": {
+      "score": 1.0,
+      "threshold": 0.9,
+      "passed": true
+    },
+    "citation_correctness": {
+      "score": 1.0,
+      "threshold": 0.95,
+      "passed": true
+    },
+    "evidence_retrieval_precision": {
+      "score": 0.4688,
+      "threshold": 0.6,
+      "passed": false
+    },
+    "important_theme_recall": {
+      "score": 0.625,
+      "threshold": 0.7,
+      "passed": false
+    },
+    "insight_quality": {
+      "score": 0.9688,
+      "threshold": 0.7,
+      "passed": true
+    },
+    "pm_usefulness": {
+      "score": 1.0,
+      "threshold": 0.7,
+      "passed": true
+    },
+    "decision_preservation": {
+      "score": 1.0,
+      "threshold": 1.0,
+      "passed": true
+    }
+  },
+  "methodology": "Offline deterministic evaluation against ground-truth and authoritative artifacts.",
+  "evaluation_limitations": [
+    "Synthetic ground truth was strictly isolated for evaluation only.",
+    "PM usefulness uses an objective proxy rubric rather than live human evaluation.",
+    "No external LLM judge was invoked to preserve repeatability and zero cost."
+  ]
+}

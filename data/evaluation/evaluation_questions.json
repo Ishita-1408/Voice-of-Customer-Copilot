@@ -1,0 +1,401 @@
+[
+  {
+    "question_id": "EV-ER-01",
+    "category": "Evidence Retrieval",
+    "question": "Which customer feedback records support checkout payment status ambiguity and session timeouts?",
+    "expected_evidence_ids": [
+      "SYN-SUR-007",
+      "SYN-SUP-014",
+      "SYN-INT-001",
+      "SYN-INT-002",
+      "SYN-SUR-003",
+      "SYN-SUP-018",
+      "SYN-SUP-002",
+      "SYN-SUR-001"
+    ],
+    "expected_theme": "Payment Status Ambiguity During Checkout",
+    "expected_decision": "BUILD",
+    "evaluation_notes": "Evaluates precision of retrieved evidence for payment failure and redirect anxiety."
+  },
+  {
+    "question_id": "EV-ER-02",
+    "category": "Evidence Retrieval",
+    "question": "Which customer feedback records substantiate poor product quality and below-average item conditions?",
+    "expected_evidence_ids": [
+      "PUB-000147",
+      "PUB-000342",
+      "PUB-000038",
+      "PUB-000175",
+      "PUB-000347",
+      "PUB-000324",
+      "PUB-000107",
+      "PUB-000042"
+    ],
+    "expected_theme": "Poor Product Quality",
+    "expected_decision": "BUILD",
+    "evaluation_notes": "Checks retrieval of customer complaints regarding substandard physical product quality."
+  },
+  {
+    "question_id": "EV-ER-03",
+    "category": "Evidence Retrieval",
+    "question": "Which customer feedback records provide evidence for mediocre product build and small component sizing?",
+    "expected_evidence_ids": [
+      "PUB-000140",
+      "PUB-000298",
+      "PUB-000104",
+      "PUB-000238",
+      "PUB-000143",
+      "PUB-000051",
+      "PUB-000263",
+      "PUB-000340"
+    ],
+    "expected_theme": "Mediocre Product Build Quality",
+    "expected_decision": "INVESTIGATE",
+    "evaluation_notes": "Evaluates evidence retrieval for lukewarm average product build reviews."
+  },
+  {
+    "question_id": "EV-ER-04",
+    "category": "Evidence Retrieval",
+    "question": "Which feedback records substantiate high overall customer praise and product satisfaction?",
+    "expected_evidence_ids": [
+      "PUB-000223",
+      "PUB-000331",
+      "PUB-000315",
+      "PUB-000335",
+      "PUB-000027",
+      "PUB-000253",
+      "PUB-000164",
+      "PUB-000247"
+    ],
+    "expected_theme": "Positive Product Quality and Satisfaction",
+    "expected_decision": "MONITOR",
+    "evaluation_notes": "Verifies retrieval of positive customer quality praise."
+  },
+  {
+    "question_id": "EV-ER-05",
+    "category": "Evidence Retrieval",
+    "question": "Which customer feedback records evidence severe product failure or malfunctioning after minimal usage?",
+    "expected_evidence_ids": [
+      "PUB-000060",
+      "PUB-000094",
+      "PUB-000172",
+      "PUB-000218",
+      "PUB-000257",
+      "PUB-000144",
+      "PUB-000124",
+      "PUB-000301"
+    ],
+    "expected_theme": "Poor Quality and Product Failure",
+    "expected_decision": "DON'T BUILD YET",
+    "evaluation_notes": "Checks retrieval of product malfunction records."
+  },
+  {
+    "question_id": "EV-ER-06",
+    "category": "Evidence Retrieval",
+    "question": "Which customer feedback records provide evidence for wishlist feature requests and AI assistant tools?",
+    "expected_evidence_ids": [
+      "SYN-INT-029",
+      "SYN-INT-028",
+      "SYN-SUR-023",
+      "SYN-SUP-074"
+    ],
+    "expected_theme": "Mixed Customer Feedback",
+    "expected_decision": "MONITOR",
+    "evaluation_notes": "Verifies retrieval of AI wishlist and feature enhancement suggestions."
+  },
+  {
+    "question_id": "EV-ER-07",
+    "category": "Evidence Retrieval",
+    "question": "Which records provide evidence of smooth first-time customer onboarding experiences?",
+    "expected_evidence_ids": [
+      "SYN-SUR-015",
+      "SYN-SUP-041",
+      "SYN-SUP-042",
+      "SYN-SUR-016"
+    ],
+    "expected_theme": "Mixed Customer Feedback",
+    "expected_decision": "MONITOR",
+    "evaluation_notes": "Checks retrieval of positive onboarding feedback samples."
+  },
+  {
+    "question_id": "EV-ER-08",
+    "category": "Evidence Retrieval",
+    "question": "Which feedback records cite anxiety over delayed delivery dates and tracking mismatches?",
+    "expected_evidence_ids": [
+      "SYN-SUR-010",
+      "SYN-SUP-023",
+      "SYN-SUP-014",
+      "SYN-INT-001"
+    ],
+    "expected_theme": "Payment Status Ambiguity During Checkout",
+    "expected_decision": "BUILD",
+    "evaluation_notes": "Evaluates delivery uncertainty evidence clustered with transactional friction."
+  },
+  {
+    "question_id": "EV-TD-01",
+    "category": "Theme / Problem Discovery",
+    "question": "Does the pipeline discover an actionable theme representing Payment & Checkout Reliability?",
+    "expected_evidence_ids": [
+      "SYN-SUR-007",
+      "SYN-SUP-014"
+    ],
+    "expected_theme": "Payment & Checkout Reliability",
+    "expected_decision": "BUILD",
+    "evaluation_notes": "Verifies discovery of the primary synthetic checkout reliability theme (Cluster 3)."
+  },
+  {
+    "question_id": "EV-TD-02",
+    "category": "Theme / Problem Discovery",
+    "question": "Does the pipeline discover a theme capturing severe product physical quality deficiencies?",
+    "expected_evidence_ids": [
+      "PUB-000147",
+      "PUB-000342"
+    ],
+    "expected_theme": "Product Quality Issues",
+    "expected_decision": "BUILD",
+    "evaluation_notes": "Checks semantic theme identification for low product quality (Cluster 2)."
+  },
+  {
+    "question_id": "EV-TD-03",
+    "category": "Theme / Problem Discovery",
+    "question": "Does the pipeline discover a theme reflecting mediocre or average build quality?",
+    "expected_evidence_ids": [
+      "PUB-000140",
+      "PUB-000298"
+    ],
+    "expected_theme": "Mediocre Product Build Quality",
+    "expected_decision": "INVESTIGATE",
+    "evaluation_notes": "Verifies identification of borderline satisfaction and average quality (Cluster 1)."
+  },
+  {
+    "question_id": "EV-TD-04",
+    "category": "Theme / Problem Discovery",
+    "question": "Does the pipeline isolate high-volume positive customer satisfaction feedback into a distinct cluster?",
+    "expected_evidence_ids": [
+      "PUB-000223",
+      "PUB-000331"
+    ],
+    "expected_theme": "Positive Product Quality and Satisfaction",
+    "expected_decision": "MONITOR",
+    "evaluation_notes": "Verifies segregation of positive review feedback (Cluster 0)."
+  },
+  {
+    "question_id": "EV-TD-05",
+    "category": "Theme / Problem Discovery",
+    "question": "Does the pipeline identify product breakdown and short-term operational failure as a specific theme?",
+    "expected_evidence_ids": [
+      "PUB-000060",
+      "PUB-000094"
+    ],
+    "expected_theme": "Poor Quality and Product Failure",
+    "expected_decision": "DON'T BUILD YET",
+    "evaluation_notes": "Verifies discovery of product failure cluster (Cluster 4)."
+  },
+  {
+    "question_id": "EV-TD-06",
+    "category": "Theme / Problem Discovery",
+    "question": "Does the pipeline identify wishlist and AI shopping feature requests within customer feedback?",
+    "expected_evidence_ids": [
+      "SYN-INT-029",
+      "SYN-SUR-023"
+    ],
+    "expected_theme": "Wishlist / AI Assistant Feature Requests",
+    "expected_decision": "MONITOR",
+    "evaluation_notes": "Verifies discovery of AI shopping and wishlist feature suggestions (Cluster 5)."
+  },
+  {
+    "question_id": "EV-PD-01",
+    "category": "Prioritization / Decision",
+    "question": "What is the highest priority theme recommended for immediate BUILD development?",
+    "expected_evidence_ids": [
+      "SYN-SUR-007",
+      "SYN-SUP-014"
+    ],
+    "expected_theme": "Payment Status Ambiguity During Checkout",
+    "expected_decision": "BUILD",
+    "evaluation_notes": "Verifies that Cluster 3 receives priority score ~0.4695 and BUILD classification."
+  },
+  {
+    "question_id": "EV-PD-02",
+    "category": "Prioritization / Decision",
+    "question": "Why is Poor Product Quality (Cluster 2) classified as BUILD?",
+    "expected_evidence_ids": [
+      "PUB-000147",
+      "PUB-000342"
+    ],
+    "expected_theme": "Poor Product Quality",
+    "expected_decision": "BUILD",
+    "evaluation_notes": "Verifies BUILD decision driven by high severity (4.00/5) and high evidence strength (0.98)."
+  },
+  {
+    "question_id": "EV-PD-03",
+    "category": "Prioritization / Decision",
+    "question": "What decision is assigned to Mediocre Product Build Quality (Cluster 1)?",
+    "expected_evidence_ids": [
+      "PUB-000140",
+      "PUB-000298"
+    ],
+    "expected_theme": "Mediocre Product Build Quality",
+    "expected_decision": "INVESTIGATE",
+    "evaluation_notes": "Verifies INVESTIGATE decision for priority score in [0.12, 0.25)."
+  },
+  {
+    "question_id": "EV-PD-04",
+    "category": "Prioritization / Decision",
+    "question": "Why is Positive Product Quality and Satisfaction classified as MONITOR despite having 145 records?",
+    "expected_evidence_ids": [
+      "PUB-000223",
+      "PUB-000331"
+    ],
+    "expected_theme": "Positive Product Quality and Satisfaction",
+    "expected_decision": "MONITOR",
+    "evaluation_notes": "Verifies low severity (1.39/5) keeps priority score at 0.0788 (MONITOR threshold)."
+  },
+  {
+    "question_id": "EV-PD-05",
+    "category": "Prioritization / Decision",
+    "question": "Why is Poor Quality and Product Failure (Cluster 4) classified as DON'T BUILD YET despite high severity (4.89)?",
+    "expected_evidence_ids": [
+      "PUB-000060",
+      "PUB-000094"
+    ],
+    "expected_theme": "Poor Quality and Product Failure",
+    "expected_decision": "DON'T BUILD YET",
+    "evaluation_notes": "Verifies multiplicative impact: unknown segments (1.2% known) suppress priority score to 0.0492."
+  },
+  {
+    "question_id": "EV-PD-06",
+    "category": "Prioritization / Decision",
+    "question": "What decision is assigned to Mixed Customer Feedback (Cluster 5)?",
+    "expected_evidence_ids": [
+      "SYN-INT-029",
+      "SYN-SUP-074"
+    ],
+    "expected_theme": "Mixed Customer Feedback",
+    "expected_decision": "MONITOR",
+    "evaluation_notes": "Verifies MONITOR classification for priority score ~0.0972."
+  },
+  {
+    "question_id": "EV-PI-01",
+    "category": "Product Insight / Recommendation",
+    "question": "What engineering action is recommended for payment checkout ambiguity (Cluster 3)?",
+    "expected_evidence_ids": [
+      "SYN-SUR-007",
+      "SYN-SUP-014",
+      "SYN-INT-001"
+    ],
+    "expected_theme": "Payment Status Ambiguity During Checkout",
+    "expected_decision": "BUILD",
+    "evaluation_notes": "Checks recommendation for payment polling and fallback confirmation screens."
+  },
+  {
+    "question_id": "EV-PI-02",
+    "category": "Product Insight / Recommendation",
+    "question": "What product action is recommended for Poor Product Quality (Cluster 2)?",
+    "expected_evidence_ids": [
+      "PUB-000147",
+      "PUB-000342"
+    ],
+    "expected_theme": "Poor Product Quality",
+    "expected_decision": "BUILD",
+    "evaluation_notes": "Verifies recommendation to enhance quality assurance and fulfillment checks."
+  },
+  {
+    "question_id": "EV-PI-03",
+    "category": "Product Insight / Recommendation",
+    "question": "What exploratory action is recommended for Mediocre Product Build Quality (Cluster 1)?",
+    "expected_evidence_ids": [
+      "PUB-000140",
+      "PUB-000298"
+    ],
+    "expected_theme": "Mediocre Product Build Quality",
+    "expected_decision": "INVESTIGATE",
+    "evaluation_notes": "Verifies user research and component sizing audit recommendation."
+  },
+  {
+    "question_id": "EV-PI-04",
+    "category": "Product Insight / Recommendation",
+    "question": "What monitoring action is recommended for general positive quality feedback (Cluster 0)?",
+    "expected_evidence_ids": [
+      "PUB-000223",
+      "PUB-000331"
+    ],
+    "expected_theme": "Positive Product Quality and Satisfaction",
+    "expected_decision": "MONITOR",
+    "evaluation_notes": "Verifies telemetry tracking for baseline review sentiment shifts."
+  },
+  {
+    "question_id": "EV-PI-05",
+    "category": "Product Insight / Recommendation",
+    "question": "What recommendation is given for the mixed onboarding and feature request cluster (Cluster 5)?",
+    "expected_evidence_ids": [
+      "SYN-INT-029",
+      "SYN-SUR-015"
+    ],
+    "expected_theme": "Mixed Customer Feedback",
+    "expected_decision": "MONITOR",
+    "evaluation_notes": "Verifies recommendation to monitor onboarding conversion while gauging AI feature demand."
+  },
+  {
+    "question_id": "EV-PI-06",
+    "category": "Product Insight / Recommendation",
+    "question": "What rationale is given for deferring action on product failures in Cluster 4?",
+    "expected_evidence_ids": [
+      "PUB-000060",
+      "PUB-000094"
+    ],
+    "expected_theme": "Poor Quality and Product Failure",
+    "expected_decision": "DON'T BUILD YET",
+    "evaluation_notes": "Verifies recommendation to defer development due to low priority score and unsegmented data."
+  },
+  {
+    "question_id": "EV-CL-01",
+    "category": "Contradiction / Limitation Awareness",
+    "question": "Which theme clusters exhibit significant sentiment contradictions between positive and negative feedback?",
+    "expected_evidence_ids": [
+      "PUB-000223",
+      "PUB-000140",
+      "PUB-000147",
+      "SYN-INT-029"
+    ],
+    "expected_theme": "Contradiction Detection",
+    "expected_decision": "N/A",
+    "evaluation_notes": "Verifies contradiction flags on Clusters 0, 1, 2, and 5 (positive >= 2 and negative >= 2)."
+  },
+  {
+    "question_id": "EV-CL-02",
+    "category": "Contradiction / Limitation Awareness",
+    "question": "Which theme clusters have high severity but suffer from unknown customer segment limitations?",
+    "expected_evidence_ids": [
+      "PUB-000060",
+      "PUB-000147"
+    ],
+    "expected_theme": "Customer Segment Limitations",
+    "expected_decision": "N/A",
+    "evaluation_notes": "Identifies Cluster 4 (1.2% known) and Cluster 2 (20.6% known) as segment-limited."
+  },
+  {
+    "question_id": "EV-CL-03",
+    "category": "Contradiction / Limitation Awareness",
+    "question": "How does the insight layer handle the lack of backend technical error logs for checkout timeouts?",
+    "expected_evidence_ids": [
+      "SYN-SUR-007",
+      "SYN-SUP-014"
+    ],
+    "expected_theme": "Payment Status Ambiguity During Checkout",
+    "expected_decision": "BUILD",
+    "evaluation_notes": "Verifies limitation note regarding lack of backend partner timeout error codes."
+  },
+  {
+    "question_id": "EV-CL-04",
+    "category": "Contradiction / Limitation Awareness",
+    "question": "Why does Mixed Customer Feedback (Cluster 5) note low theme coherence and confidence?",
+    "expected_evidence_ids": [
+      "SYN-INT-029",
+      "SYN-SUR-015"
+    ],
+    "expected_theme": "Mixed Customer Feedback",
+    "expected_decision": "MONITOR",
+    "evaluation_notes": "Verifies limitation note on divergent topics (onboarding ease vs. AI wishlist requests)."
+  }
+]
