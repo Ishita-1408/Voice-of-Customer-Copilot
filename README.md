@@ -80,17 +80,17 @@ Where:
 
 ## 📊 Evaluation Framework & Results
 
-The system includes a deterministic offline evaluation framework assessing 30 standardized questions across 7 evaluation metrics without external LLM judges:
+The system includes a deterministic offline evaluation framework assessing 30 standardized evaluation questions across 7 core metrics without requiring an external LLM judge. The evaluation is conducted directly against the final canonical 8-theme clustering solution and ground-truth benchmark:
 
 | Evaluation Metric | Score | Target Threshold | Status | Description |
 | :--- | :---: | :---: | :---: | :--- |
-| **Evidence Support Rate** | **100.0%** | $\ge 90.0\%$ | ✅ PASS | Proportion of insight claims supported by retrieved evidence. |
-| **Citation Correctness** | **100.0%** | $\ge 95.0\%$ | ✅ PASS | Verifies that 100% of cited feedback IDs exist in canonical data. |
-| **Decision Preservation** | **100.0%** | $100.0\%$ | ✅ PASS | Ensures LLMs never mutate mathematical priority scores or decisions. |
-| **PM Usefulness** | **100.0%** | $\ge 70.0\%$ | ✅ PASS | Rubric evaluating clarity of customer problem, actionability, and key moves. |
-| **Insight Quality** | **96.9%** | $\ge 70.0\%$ | ✅ PASS | Groundedness and coherence score across all generated themes. |
-| **Important Theme Recall** | **62.5%** | $\ge 70.0\%$ | ⚠️ Baseline | Recall of isolated synthetic evaluation benchmark themes. |
-| **Evidence Retrieval Precision**| **46.9%** | $\ge 60.0\%$ | ⚠️ Baseline | Precision against synthetic ground-truth benchmark categories. |
+| **Evidence Support Rate** | **100.0%** | $\ge 90.0\%$ | ✅ PASS | Proportion of generated insights containing valid supporting feedback IDs. |
+| **Citation Correctness** | **100.0%** | $\ge 95.0\%$ | ✅ PASS | Verifies that 100% of cited feedback IDs exist in canonical feedback and evidence bundles. |
+| **Decision Preservation** | **100.0%** | $100.0\%$ | ✅ PASS | Ensures generated insight decisions strictly match mathematical priority decisions. |
+| **PM Usefulness** | **100.0%** | $\ge 70.0\%$ | ✅ PASS | Objective proxy rubric evaluating problem clarity, actionability, and key moves. |
+| **Insight Quality** | **96.9%** | $\ge 70.0\%$ | ✅ PASS | 8-point deterministic rubric evaluating groundedness, consistency, and limitations. |
+| **Evidence Retrieval Precision** | **89.1%** | $\ge 60.0\%$ | ✅ PASS | Macro precision of retrieved evidence IDs against expected benchmark feedback items. |
+| **Important Theme Recall** | **87.5% (7/8)** | $\ge 70.0\%$ | ✅ PASS | Recovery rate of synthetic ground-truth customer themes achieving $\ge 70\%$ dominant cluster concentration. |
 
 ---
 

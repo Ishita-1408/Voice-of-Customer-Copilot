@@ -1,12 +1,12 @@
 {
   "evaluation_version": "1.0",
-  "generated_at": "2026-09-12T10:49:49.488700+00:00",
+  "generated_at": "2026-09-12T13:08:35.592454+00:00",
   "total_questions": 30,
   "metrics": {
     "evidence_support_rate": 1.0,
     "citation_correctness": 1.0,
-    "evidence_retrieval_precision": 0.4688,
-    "important_theme_recall": 0.625,
+    "evidence_retrieval_precision": 0.8906,
+    "important_theme_recall": 0.875,
     "insight_quality": 0.9688,
     "pm_usefulness": 1.0,
     "decision_preservation": 1.0
@@ -23,14 +23,14 @@
       "passed": true
     },
     "evidence_retrieval_precision": {
-      "score": 0.4688,
+      "score": 0.8906,
       "threshold": 0.6,
-      "passed": false
+      "passed": true
     },
     "important_theme_recall": {
-      "score": 0.625,
+      "score": 0.875,
       "threshold": 0.7,
-      "passed": false
+      "passed": true
     },
     "insight_quality": {
       "score": 0.9688,

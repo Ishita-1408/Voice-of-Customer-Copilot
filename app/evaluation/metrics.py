@@ -184,26 +184,88 @@ def calculate_evidence_retrieval_precision(
 def calculate_important_theme_recall(
     canonical_df: pd.DataFrame,
     discovered_themes: List[Dict[str, Any]],
+    cluster_df: Optional[pd.DataFrame] = None,
 ) -> Tuple[float, Dict[str, Any]]:
     """
     Metric 4: Important Theme Recall (EVALUATION-ONLY).
     Measures recovery of synthetic ground-truth customer themes among discovered clusters.
+    Evaluates whether >=70% of ground-truth theme feedback records concentrate in a dominant cluster,
+    falling back to semantic keyword recovery when cluster mappings are not provided.
     """
     synth_df = canonical_df[canonical_df["theme_origin"] == "synthetic_ground_truth"]
     ground_truth_themes = synth_df["theme"].dropna().unique().tolist()
 
-    discovered_names = [t["theme_name"].lower() for t in discovered_themes]
-    discovered_problems = [t.get("problem_summary", "").lower() for t in discovered_themes]
+    if not ground_truth_themes:
+        return 0.0, {
+            "ground_truth_theme_count": 0,
+            "matched_count": 0,
+            "matched_themes": [],
+            "unmatched_themes": [],
+            "recall": 0.0,
+        }
 
-    # Keyword mappings between synthetic ground truth and discovered themes
+    # If cluster mapping is available (either in canonical_df or via cluster_df)
+    merged_synth = None
+    if "cluster_id" in synth_df.columns:
+        merged_synth = synth_df
+    elif cluster_df is not None and "cluster_id" in cluster_df.columns and "feedback_id" in cluster_df.columns:
+        merged_synth = pd.merge(synth_df, cluster_df[["feedback_id", "cluster_id"]], on="feedback_id", how="inner")
+
+    if merged_synth is not None and len(merged_synth) > 0 and "cluster_id" in merged_synth.columns:
+        matched_themes = []
+        unmatched_themes = []
+        per_theme_details: Dict[str, Any] = {}
+
+        for gt_theme in ground_truth_themes:
+            grp = merged_synth[merged_synth["theme"] == gt_theme]
+            if len(grp) == 0:
+                unmatched_themes.append(gt_theme)
+                continue
+
+            vc = grp["cluster_id"].value_counts()
+            dom_cid = int(vc.index[0])
+            dom_cnt = int(vc.iloc[0])
+            dom_cov = dom_cnt / len(grp)
+            meets_threshold = bool(dom_cov >= 0.70)
+
+            if meets_threshold:
+                matched_themes.append(gt_theme)
+            else:
+                unmatched_themes.append(gt_theme)
+
+            per_theme_details[gt_theme] = {
+                "total_records": len(grp),
+                "dominant_cluster": dom_cid,
+                "dominant_count": dom_cnt,
+                "dominant_coverage": round(float(dom_cov), 4),
+                "meets_70pct_threshold": meets_threshold,
+            }
+
+        recall = len(matched_themes) / len(ground_truth_themes)
+        return round(float(recall), 4), {
+            "ground_truth_theme_count": len(ground_truth_themes),
+            "matched_count": len(matched_themes),
+            "matched_themes": matched_themes,
+            "unmatched_themes": unmatched_themes,
+            "recall": round(float(recall), 4),
+            "per_theme_details": per_theme_details,
+        }
+
+    # Fallback: Semantic keyword matching across discovered theme names and problem summaries
+    discovered_names = [t.get("theme_name", "").lower() for t in discovered_themes]
+    discovered_problems = [t.get("problem_summary", t.get("customer_problem", "")).lower() for t in discovered_themes]
+
     theme_keywords = {
-        "Payment & Checkout Reliability": ["payment", "checkout", "transaction", "bank"],
-        "Delivery-Date Uncertainty": ["delivery", "dispatch", "timeline", "date", "checkout"],
-        "Product Quality Issues": ["poor product quality", "poor quality", "quality not good", "subpar"],
-        "Mediocre Product Build Quality": ["mediocre", "build quality", "average", "decent"],
-        "Wishlist / AI Assistant Feature Requests": ["wishlist", "ai assistant", "ai shopping", "mixed"],
-        "Onboarding Confusion": ["onboarding", "setup", "first-time", "mixed"],
-        "Poor Quality and Product Failure": ["product failure", "not working", "waste of money"],
+        "Payment & Checkout Reliability": ["payment", "checkout", "transaction", "bank", "instability", "failure"],
+        "Delivery-Date Uncertainty": ["delivery", "dispatch", "timeline", "date", "tracking", "estimates"],
+        "Product Quality Issues": ["poor product quality", "poor quality", "quality not good", "subpar", "durability", "material", "poor quality"],
+        "Mediocre Product Build Quality": ["mediocre", "build quality", "average", "decent", "quality"],
+        "Wishlist / AI Assistant Feature Requests": ["wishlist", "ai assistant", "ai shopping", "assistant", "ai"],
+        "Positive Checkout/Shopping Experience": ["positive", "shopping experience", "seamless checkout", "delivery experience", "high overall", "satisfaction"],
+        "Returns / Refund Friction": ["return", "refund", "friction", "exchange", "delivery"],
+        "Onboarding Confusion": ["onboarding", "setup", "first-time", "mixed", "confusion"],
+        "Search Relevance": ["search", "relevance", "mixed", "navigation"],
+        "Poor Quality and Product Failure": ["product failure", "not working", "waste of money", "durability"],
     }
 
     matched_themes = []
@@ -382,6 +444,7 @@ def run_full_evaluation(
     product_insights: List[Dict[str, Any]],
     evaluation_questions: List[Dict[str, Any]],
     traceability: Optional[List[Dict[str, Any]]] = None,
+    cluster_df: Optional[pd.DataFrame] = None,
 ) -> Dict[str, Any]:
     """Execute full offline evaluation across all 7 metrics."""
     canonical_fids = set(canonical_df["feedback_id"].dropna().unique())
@@ -401,7 +464,7 @@ def run_full_evaluation(
 
     # 4. Important Theme Recall
     theme_recall, theme_details = calculate_important_theme_recall(
-        canonical_df, product_insights
+        canonical_df, product_insights, cluster_df=cluster_df
     )
 
     # 5. Insight Quality

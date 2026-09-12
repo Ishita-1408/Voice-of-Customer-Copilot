@@ -39,6 +39,7 @@ def main() -> None:
     eval_dir.mkdir(parents=True, exist_ok=True)
 
     csv_path = PROJECT_ROOT / "data" / "processed" / "voc_feedback.csv"
+    clusters_path = PROJECT_ROOT / "data" / "processed" / "theme_clusters.csv"
     bundles_path = PROJECT_ROOT / "data" / "processed" / "evidence_bundles.json"
     assessments_path = PROJECT_ROOT / "data" / "processed" / "priority_assessments.json"
     insights_path = PROJECT_ROOT / "data" / "processed" / "product_insights.json"
@@ -51,6 +52,7 @@ def main() -> None:
 
     # 1. Load pipeline artifacts
     canonical_df = pd.read_csv(csv_path)
+    cluster_df = pd.read_csv(clusters_path) if clusters_path.exists() else None
 
     with open(bundles_path, "r", encoding="utf-8") as f:
         evidence_bundles = json.load(f)
@@ -79,6 +81,7 @@ def main() -> None:
         product_insights=product_insights,
         evaluation_questions=eval_questions,
         traceability=traceability,
+        cluster_df=cluster_df,
     )
 
     # 4. Save results JSON and CSV
