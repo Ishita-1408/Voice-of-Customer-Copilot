@@ -17,6 +17,8 @@ Product teams are inundated with thousands of customer feedback items across fra
 ```
 Customer Feedback ──► Problem Discovery ──► Evidence Retrieval ──► Segment Analysis ──► Frequency & Severity ──► Priority Scoring ──► Product Decision
 ```
+<img width="947" height="496" alt="image" src="https://github.com/user-attachments/assets/abd0f835-535b-4785-bcaf-b73cefa0f754" />
+<img width="918" height="468" alt="image" src="https://github.com/user-attachments/assets/59a5483c-62d6-46bc-b855-a4356326deea" />
 
 ---
 
@@ -290,7 +292,18 @@ voc-copilot/
 3. **Deterministic Heuristic Evaluation**: PM usefulness and insight quality are evaluated using deterministic proxy rubrics rather than live human evaluator panels.
 
 ---
+## Future Scope
+
+The current MVP establishes an evidence-grounded Voice of Customer workflow. Future development can extend it in the following directions:
+
+- **Real-Time Feedback Ingestion** — Connect production sources such as support tickets, app reviews, surveys, CRM systems, and product feedback platforms through APIs or scheduled pipelines.
+
+- **Multilingual Feedback Analysis** — Extend ingestion and semantic analysis to customer feedback across multiple languages while preserving evidence traceability.
+
+- **Human-in-the-Loop Refinement** — Allow product managers to merge, split, rename, approve, or reject themes and recommendations, with feedback captured for future system improvement.
+
+- **Continuous Learning** — Use validated PM decisions and feedback to improve retrieval, theme discovery, prioritization, and recommendation quality over successive iterations.
 
 ## 📄 License
 
-License: Not yet specified.
+MIT Licence
