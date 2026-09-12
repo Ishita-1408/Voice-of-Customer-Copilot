@@ -5,7 +5,6 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/frontend-Streamlit-FF4B4B.svg)](https://streamlit.io/)
 [![Google Gemini](https://img.shields.io/badge/LLM-Google%20Gemini-4285F4.svg)](https://ai.google.dev/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
@@ -99,7 +98,7 @@ The system includes a deterministic offline evaluation framework assessing 30 st
 To demonstrate realistic enterprise multi-channel VoC capabilities, the dataset consists of **800 structured records**:
 
 1. **Public E-Commerce Product Reviews (350 records)**:
-   - Sourced from open public product review datasets (Amazon product review corpus).
+   - Sourced from the Flipkart Product Reviews with Sentiment Dataset.
    - Real-world customer reviews capturing product quality, delivery, and satisfaction.
    - Ground-truth theme labels set to `Unknown` and `theme_origin` set to `not_available`.
 2. **Synthetic Demonstration Records (450 records)**:
@@ -130,8 +129,8 @@ To demonstrate realistic enterprise multi-channel VoC capabilities, the dataset 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/voc-copilot.git
-   cd voc-copilot
+   git clone https://github.com/Ishita-1408/Voice-of-Customer-Copilot.git
+   cd Voice-of-Customer-Copilot
    ```
 
 2. **Create and activate a virtual environment:**
@@ -294,4 +293,4 @@ voc-copilot/
 
 ## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+License: Not yet specified.
