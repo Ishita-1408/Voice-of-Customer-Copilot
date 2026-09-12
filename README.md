@@ -6,6 +6,8 @@
 [![Streamlit](https://img.shields.io/badge/frontend-Streamlit-FF4B4B.svg)](https://streamlit.io/)
 [![Google Gemini](https://img.shields.io/badge/LLM-Google%20Gemini-4285F4.svg)](https://ai.google.dev/)
 
+Live Demo: https://ishita-1408-voice-of-customer-copilot-appstreamlit-app-2ywxlu.streamlit.app/
+
 ---
 
 ## 📌 Executive Overview
